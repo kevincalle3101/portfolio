@@ -10,7 +10,7 @@ const HeroSection = () => {
             <div className='grid items-center grid-cols-1 sm:grid-cols-10' >
                 <div className='col-span-6 ml-0 text-center sm:text-left'>
                     <h1 className='text-4xl sm:text-5xl lg:text-6xl mb-4 font-extrabold' >
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >Hello, I'm {" "}</span>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >Hello, I'm</span>
                         <br/>
                         <TypeAnimation
                             sequence={[
@@ -26,7 +26,7 @@ const HeroSection = () => {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl'>Full Stack Web Developer</p>
+                    <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg sm:mt-16  lg:text-xl'>Full Stack Web Developer</p>
                     <div>
                         <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</button>
                         <button className='px-1 w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
