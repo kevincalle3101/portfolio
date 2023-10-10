@@ -5,6 +5,15 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 const HeroSection = () => {
+
+    const downloadResume = (): void => {
+        const link = document.createElement('a');
+        link.href = '../../CV-Kevin-Calle.pdf';
+        link.download = 'Kevin Calle Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return (
         <section> 
             <div className='grid items-center grid-cols-1 sm:grid-cols-10 gap-y-8' >
@@ -29,7 +38,8 @@ const HeroSection = () => {
                     <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg sm:mt-4  lg:text-xl'>Full Stack Web Developer</p>
                     <div>
                         <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</button>
-                        <button className='px-1 w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
+                        <button onClick={() => downloadResume()} 
+                        className='px-1 w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
                         </button>
                     </div>
