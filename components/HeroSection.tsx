@@ -30,8 +30,8 @@ const HeroSection = () => {
                     <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg sm:mt-4  lg:text-xl'>Full Stack Web Developer</p>
                     <div>
                         <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</button>
-                        <a href='../../CV-Kevin-Calle.pdf' download='Kevin_Calle_Resume.pdf'
-                        className='px-1 w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
+                        <a href='/CV.pdf' download
+                        className='px-1 inline-block w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
                         </a>
                     </div>
