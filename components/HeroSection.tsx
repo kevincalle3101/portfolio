@@ -7,17 +7,19 @@ import { TypeAnimation } from 'react-type-animation';
 const HeroSection = () => {
 
     return (
-        <section> 
+        <section>
             <div className='grid items-center grid-cols-1 sm:grid-cols-10 gap-y-8' >
                 <div className='col-span-6 ml-0 text-center sm:text-left'>
                     <h1 className='text-4xl sm:text-5xl lg:text-6xl mb-2 font-extrabold' >
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >{`Hello, I'm`}</span>
-                        <br/>
+                        <br />
                         <TypeAnimation
                             sequence={[
                                 'Kevin Calle',
                                 1000,
                                 'Frontend Developer',
+                                1000,
+                                'UI/UX Designer',
                                 1000,
                                 'Backend Developer',
                                 1000
@@ -28,10 +30,21 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className='text-[#ADB7BE] mb-6 text-base sm:text-lg sm:mt-4  lg:text-xl'>Full Stack Web Developer</p>
+                    <div className='flex flex-arrow'>
+                        <a href="https://github.com/kevincalle3101" className='flex justify-center items-center'>
+                            <img alt='github' src='/images/logoGithub(1).png' width={42} height={42}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kevin-calle-53935b273/" className='flex  justify-center items-center'>
+                            <img  src='/images/linkedlnLogo.png' alt='linkedin' width={60} height={60}/>
+                        </a>
+                        <a href="kevincalle3101@gmail.com" className='flex justify-center items-center'>
+                            <img src='/images/gmailLogo.png' alt='gmail' width={45} height={50}/>
+                        </a>
+                    </div>
                     <div>
                         <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</button>
                         <a href='/CV.pdf' download
-                        className='px-1 inline-block w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
+                            className='px-1 inline-block w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
                         </a>
                     </div>
