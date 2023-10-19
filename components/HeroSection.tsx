@@ -9,8 +9,10 @@ const HeroSection = () => {
     return (
         <section className='lg:py-16'>
             <div className='grid items-center grid-cols-1 sm:grid-cols-12 gap-y-8' >
-                <div className='col-span-8 ml-0 text-center sm:text-left sm:justify-self-start'>
-                    <h1 className='text-4xl sm:text-5xl lg:text-8xl mb-2 font-extrabold' >
+                <div className='col-span-7 xl:col-span-8 ml-0 text-center sm:text-left sm:justify-self-start'>
+                    <h1 className='text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-2 font-extrabold min-h-[120px] xs:min-h-[0px] 
+                    sm:min-h-[150px] md:min-h-[150px] lg:min-h-[220px] xl:min-h-[300px] 2xl:min-h-[0px] max-w-[200px] xs:max-w-none
+                    sm:max-w-[280px] lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-none mx-auto'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >{`Hello, I'm`}</span>
                         <br />
                         <TypeAnimation
@@ -19,7 +21,7 @@ const HeroSection = () => {
                                 1000,
                                 'Frontend Developer',
                                 1000,
-                                'UI/UX Designer',
+                                'UI / UX Designer',
                                 1000,
                                 'Backend Developer',
                                 1000
@@ -27,6 +29,7 @@ const HeroSection = () => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
+                            preRenderFirstString={true}
                         />
                     </h1>
                     <p className='text-[#ADB7BE] mb-5 text-base sm:text-lg sm:mt-2  lg:text-xl'>Full Stack Web Developer</p>
@@ -49,8 +52,8 @@ const HeroSection = () => {
                         </a>
                     </div>
                 </div>
-                <div className='col-span-4 lg:mt-0 place-self-center sm:ml-auto'>
-                    <div className='rounded-full overflow-hidden bg-[#181818] w-[250px] h-[250px] relative lg:w-[400px] lg:h-[400px]'>
+                <div className='col-span-5 xl:col-span-4 lg:mt-0 place-self-center sm:mb-auto sm:ml-auto'>
+                    <div className='rounded-full overflow-hidden bg-[#181818] w-[250px] h-[250px] md:w-[250px] md:h-[250px] relative lg:w-[400px] lg:h-[400px]'>
                         <Image
                             src='/images/fotoPerfilPorfolioKevin.png'
                             alt='foto de perfil' width={200} height={200}
