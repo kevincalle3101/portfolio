@@ -3,7 +3,13 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
-const TAB_DATA = [
+interface typeTabData {
+  title: string;
+  id: string;
+  content: JSX.Element;
+}
+
+const tabData: typeTabData[] = [
   {
     title: "Skills",
     id: "skills",
@@ -44,7 +50,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id:string): void => {
     startTransition(() => {
       setTab(id);
     });
@@ -53,7 +59,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/codingImagePortfolio.jpg" width={450} height={450} />
+        <Image src="/images/codingImagePortfolio.jpg" width={450} height={450} alt="coding"/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -88,7 +94,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+            {tabData.find((t) => t.id === tab)?.content}
           </div>
         </div>
       </div>
