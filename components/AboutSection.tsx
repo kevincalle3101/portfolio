@@ -25,32 +25,32 @@ const tabData: typeTabData[] = [
     ),
   },
   {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
     title: "Certifications",
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>EFSET English certificate-B1 intermediate</li>
+        <li>Henry Bootcamp-Full Stack Web Developer</li>
+        <li>Códigofacilito-Curso a fondo de SASS </li>
       </ul>
     ),
   },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Henry Bootcamp</li>
+      </ul>
+    ),
+  }
 ];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id:string): void => {
+  const handleTabChange = (id: string): void => {
     startTransition(() => {
       setTab(id);
     });
@@ -59,16 +59,15 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/codingImagePortfolio.jpg" width={450} height={450} alt="coding"/>
+        <Image src="/images/codingImagePortfolio.jpg" width={480} height={450} alt="coding" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-300 via-rose-600 to-rose-700 mb-4 max-w-[300px]">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Full stack developer with experience in technologies such as Next.js,
+            TypeScript, React, Redux Toolkit, and Express. Proficient in CSS design, TailwindCSS,
+            and GIT version control. Knowledge of PostgreSQL as a databases and agile methodologies
+            such as SCRUM. Additionally, I possess skills in user interface design using Figma, i am proactive,
+            quick to learn, and work well in a team. English proficiency level: EF SET Intermediate B1.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -79,18 +78,18 @@ const AboutSection = () => {
               Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              {" "}
+              Education{" "}
             </TabButton>
           </div>
           <div className="mt-8">
