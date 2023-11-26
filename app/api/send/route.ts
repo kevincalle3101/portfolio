@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import * as React from 'react';
 import ResponseEmailSend from '../../../components/ResponseEmailSend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_DLF787Tu_JEMYmZ687YMzUPHvWZn39VRQ");
 
 export async function POST(req: NextRequest, res: NextResponse) {
   const { email, subject, message } = await req.json();
