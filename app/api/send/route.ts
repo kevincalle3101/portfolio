@@ -9,14 +9,15 @@ export async function POST(req: NextRequest, res: NextResponse) {
   const { email, subject, message } = await req.json();
   try {
     const data = await resend.emails.send({
-      from: "kevincalle3101@gmail.com",
-      to: ["kevincalle3101@gmail.com", email],
+      from: "Kevin Kevin<kevincalleportfolio.online>",
+      to: ["Kevin Kevin<kevincalleportfolio.online>", email],
       subject: subject,
       react: ResponseEmailSend({ subject, message }) as React.ReactElement,
     });
 
     return NextResponse.json({ data });
   } catch (error) {
+    console.log(error);
     return NextResponse.json({ error });
   }
 }
