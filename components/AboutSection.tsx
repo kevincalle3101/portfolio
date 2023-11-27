@@ -40,7 +40,8 @@ const tabData: typeTabData[] = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Henry Bootcamp</li>
+        <li>Full Stack Developer - Henry Bootcamp</li>
+        <li>Cibersecurity Engineering - Senati (unfinished)</li>
       </ul>
     ),
   }

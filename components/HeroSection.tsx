@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 
 const HeroSection = () => {
@@ -45,7 +46,7 @@ const HeroSection = () => {
                         </a>
                     </div>
                     <div className='items-center'>
-                        <button className='px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</button>
+                        <Link href="/#contact" className='px-6 inline-block w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</Link>
                         <a href='/CV.pdf' download
                             className='px-1 inline-block w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3 sm:mt-0'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
