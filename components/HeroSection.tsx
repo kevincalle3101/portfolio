@@ -35,13 +35,13 @@ const HeroSection = () => {
                     <p className='text-[#ADB7BE] mb-5 text-base sm:text-lg sm:mt-2  lg:text-xl'>Full Stack Web Developer</p>
                     <div className='flex flex-arrow space-x-5 justify-center mb-5 mt-0 sm:justify-start'>
                         <a href="https://github.com/kevincalle3101" target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <img alt='github' src='/images/logoGithub.png' width={40} height={40}/>
+                            <Image alt='github' src='/images/logoGithub.png' width={40} height={40}/>
                         </a>
                         <a href="https://www.linkedin.com/in/kevin-calle-53935b273/" target="blank" className='flex  justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <img  src='/images/logoLinkedln.png' alt='linkedin' width={40} height={40}/>
+                            <Image  src='/images/logoLinkedln.png' alt='linkedin' width={40} height={40}/>
                         </a>
                         <a href="mailto:kevincalle3101@gmail.com"  target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <img src='/images/logoMail.png' alt='gmail' width={40} height={40}/>
+                            <Image src='/images/logoMail.png' alt='gmail' width={40} height={40}/>
                         </a>
                     </div>
                     <div className='items-center'>
