@@ -18,7 +18,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "Countries App",
-    description: "Project 5 description",
+    description: "Personal Project",
     image: "/images/projects/countriesApp.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/countries-app",
@@ -36,7 +36,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: "Tu Sueño",
-    description: "Project 2 description",
+    description: "Project for an independent Colombian company",
     image: "/images/projects/tuSueno.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/UrielGarmendia/tu-suenio-front",
@@ -45,7 +45,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Agilix",
-    description: "Project 3 description",
+    description: "Group project",
     image: "/images/projects/agilix.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
@@ -54,7 +54,7 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Videogames Wiki",
-    description: "Project 4 description",
+    description: "Personal Project",
     image: "/images/projects/videogamesWiki.webp",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
@@ -63,7 +63,7 @@ const projectsData: Project[] = [
   {
     id: 6,
     title: "Rick and Morty Wiki",
-    description: "Authentication and CRUD operations",
+    description: "Personal Project",
     image: "/images/projects/rickAndMorty.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
