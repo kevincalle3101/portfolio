@@ -27,7 +27,7 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: "Gaia Ecotrack",
-    description: "Project 1 description",
+    description: "Andromeda Computer (Colombia) Internship Project",
     image: "/images/projects/gaiaEcotrack.webp",
     tag: ["All", "Web"],
     gitUrl: "/",
