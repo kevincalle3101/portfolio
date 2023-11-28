@@ -29,6 +29,7 @@ const tabData: typeTabData[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Andromeda Computer-Internship Certificate</li>
         <li>EFSET English certificate-B1 intermediate</li>
         <li>Henry Bootcamp-Full Stack Web Developer</li>
         <li>Códigofacilito-Curso a fondo de SASS </li>
