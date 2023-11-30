@@ -10,8 +10,8 @@ interface Project {
   description: string,
   image: string,
   tag: string[],
-  gitUrl: string,
-  previewUrl: string,
+  gitUrl?: string,
+  previewUrl?: string,
 }
 
 const projectsData: Project[] = [
@@ -27,11 +27,10 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: "Gaia Ecotrack",
-    description: "Andromeda Computer (Colombia) Internship Project",
+    description: "Andromeda Computer (Colombia) - Internship certificate",
     image: "/images/projects/gaiaEcotrack.webp",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ilichb/GaiaEcotrack/tree/GaiaDEV",
   },
   {
     id: 3,
@@ -49,7 +48,6 @@ const projectsData: Project[] = [
     image: "/images/projects/agilix.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
-    previewUrl: "/",
   },
   {
     id: 5,
@@ -58,7 +56,6 @@ const projectsData: Project[] = [
     image: "/images/projects/videogamesWiki.webp",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
-    previewUrl: "https://videogames-wiki.vercel.app/",
   },
   {
     id: 6,
@@ -67,7 +64,6 @@ const projectsData: Project[] = [
     image: "/images/projects/rickAndMorty.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
-    previewUrl: "https://rick-and-morty-project-snowy.vercel.app/",
   },
 ];
 
@@ -125,8 +121,8 @@ const ProjectsSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              gitUrl={project.gitUrl? project.gitUrl : ''}
+              previewUrl={project.previewUrl? project.previewUrl : ''}
             />
           </motion.li>
         ))}
