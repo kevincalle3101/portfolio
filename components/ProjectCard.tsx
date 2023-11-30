@@ -49,7 +49,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Projec
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={true}
       // className="bg-blue100 dark:bg-blue1000 text-black dark:text-gray100"
-      size="3xl" 
+      size="2xl" 
       backdrop="opaque"
       classNames={{
         body: "py-6",
