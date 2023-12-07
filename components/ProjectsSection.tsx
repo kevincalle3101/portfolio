@@ -21,8 +21,7 @@ const projectsData: Project[] = [
     description: "Personal Project",
     image: "/images/projects/countriesApp.webp",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/kevincalle3101/countries-app",
-    previewUrl: "https://kevincalle-countries-app.vercel.app/",
+    gitUrl: "https://github.com/kevincalle3101/countries-app"
   },
   {
     id: 2,
