@@ -53,17 +53,17 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Projec
       backdrop="opaque"
       classNames={{
         body: "py-6",
-        backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
-        base: "border-[#292f46] bg-[#19172c] dark:bg-[#19172c] text-[#a8b0d3]",
-        header: "border-b-[1px] border-[#292f46]",
-        footer: "border-t-[1px] border-[#292f46]",
+        // backdrop: "bg-[#4c0519]/10 backdrop-opacity-40",
+        base: "border-[#292f46] bg-[#19172c] dark:bg-[#121212] text-white",
+        header: "border-b-[1px] border-[#ADB7BE]/60",
+        footer: "border-t-[1px] border-[#ADB7BE]/60",
         closeButton: "hover:bg-white/5 active:bg-white/10",
       }}
       >
       <ModalContent>
       {(onClose) => (
         <>
-         <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
+         <ModalHeader className="flex flex-col gap-1 text-3xl">{title}</ModalHeader>
               <ModalBody>
                 <p> 
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
