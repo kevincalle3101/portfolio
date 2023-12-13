@@ -45,7 +45,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Projec
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        {/* <p className="text-[#ADB7BE]">{description}</p> */}
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={true}
       // className="bg-blue100 dark:bg-blue1000 text-black dark:text-gray100"
@@ -66,29 +66,15 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Projec
          <ModalHeader className="flex flex-col gap-1 text-3xl">{title}</ModalHeader>
               <ModalBody>
                 <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
+                  {description}
                 </p>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                {/* <Button color="danger" variant="light" onPress={onClose}>
                   Close
-                </Button>
-                <Button className="bg-[#6f4ef2] shadow-lg shadow-indigo-500/20" onPress={onClose}>
-                  Action
+                </Button> */}
+                <Button className="bg-[#e11d48] shadow-lg shadow-rose-500/30" onPress={onClose}>
+                  Close
                 </Button>
               </ModalFooter>
         </>
