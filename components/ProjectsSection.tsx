@@ -56,7 +56,7 @@ const projectsData: Project[] = [
     title: "Videogames Wiki",
     description: "It's a video game Wiki that has intuitive search, video game details, and you can create your own!",
     image: "/images/projects/videogamesWiki.webp",
-    tag: ["All", "Mobile"],
+    tag: ["All"],
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
     previewUrl: "https://videogames-wiki.vercel.app/",
   },
