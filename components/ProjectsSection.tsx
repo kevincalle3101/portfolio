@@ -18,7 +18,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "Countries App",
-    description: "Personal Project",
+    description: "An application that will allow you to know all the data of any country in the world",
     image: "/images/projects/countriesApp.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/countries-app",
@@ -27,7 +27,7 @@ const projectsData: Project[] = [
   {
     id: 2,
     title: "Gaia Ecotrack",
-    description: "Andromeda Computer (Colombia) Internship Project",
+    description: "Gaia Ecotrack, developed during my internship at Andromeda Computer, is the MVP of a natural energy tokenization system for subsequent trading on the Algorand network.",
     image: "/images/projects/gaiaEcotrack.webp",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -36,7 +36,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: "Tu Sueño",
-    description: "Project for an independent Colombian company",
+    description: "Tu Sueño is a project for a Colombian piggy bank sales company, which has inventory management, online sales and user management.",
     image: "/images/projects/tuSueno.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/UrielGarmendia/tu-suenio-front",
@@ -45,7 +45,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: "Agilix",
-    description: "Group project",
+    description: "Agilix is a Point of Sale (POS) System that simplifies the management of retail businesses, promoting their growth through an intuitive and efficient web application.",
     image: "/images/projects/agilix.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
@@ -54,16 +54,16 @@ const projectsData: Project[] = [
   {
     id: 5,
     title: "Videogames Wiki",
-    description: "Personal Project",
+    description: "It's a video game Wiki that has intuitive search, video game details, and you can create your own!",
     image: "/images/projects/videogamesWiki.webp",
-    tag: ["All", "Mobile"],
+    tag: ["All"],
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
     previewUrl: "https://videogames-wiki.vercel.app/",
   },
   {
     id: 6,
     title: "Rick and Morty Wiki",
-    description: "Personal Project",
+    description: "It has more than 800 characters from the series, their details and save your favorites with an intuitive search for them.",
     image: "/images/projects/rickAndMorty.webp",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
