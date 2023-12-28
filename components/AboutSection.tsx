@@ -45,6 +45,16 @@ const tabData: typeTabData[] = [
         <li>Cibersecurity Engineering - Senati (unfinished)</li>
       </ul>
     ),
+  },
+  {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Tu Sueño - Full Stack Developer</li>
+        <li>Andromeda Computer - Internship</li>
+      </ul>
+    ),
   }
 ];
 

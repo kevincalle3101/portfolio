@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <div className='col-span-7 xl:col-span-8 ml-0 text-center sm:text-left sm:justify-self-start'>
                     <h1 className='text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-2 font-extrabold min-h-[120px] xs:min-h-[0px] 
                     sm:min-h-[150px] md:min-h-[150px] lg:min-h-[220px] xl:min-h-[300px] 2xl:min-h-[0px] max-w-[200px] xs:max-w-none
-                    sm:max-w-[280px] lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-none mx-auto'>
+                    sm:max-w-[280px] lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-none mx-auto 2xl:leading-normal'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >{`Hello, I'm`}</span>
                         <br />
                         <TypeAnimation
@@ -21,8 +21,6 @@ const HeroSection = () => {
                                 'Kevin Calle',
                                 1000,
                                 'Frontend Developer',
-                                1000,
-                                'UI / UX Designer',
                                 1000,
                                 'Backend Developer',
                                 1000
