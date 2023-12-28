@@ -30,7 +30,7 @@ const tabData: typeTabData[] = [
     content: (
       <ul className="list-disc pl-2">
         <li>Andromeda Computer-Internship Certificate</li>
-        <li>EFSET English certificate-B1 intermediate</li>
+        <li>EFSET English certificate-B2 Upper Intermediate</li>
         <li>Henry Bootcamp-Full Stack Web Developer</li>
         <li>Códigofacilito-Curso a fondo de SASS </li>
       </ul>

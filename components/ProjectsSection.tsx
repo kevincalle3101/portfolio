@@ -24,7 +24,7 @@ const projectsData: Project[] = [
     imagePathArray: ["/images/projects/countriesApp/countries1.webp", "/images/projects/countriesApp/countries2.webp", "/images/projects/countriesApp/countries3.webp", "/images/projects/countriesApp/countries4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/countries-app",
-    previewUrl: "https://kevincalle-countries-app.vercel.app/",
+    previewUrl: "https://kevincalle-countries-app.vercel.app/"
   },
   {
     id: 2,
@@ -33,8 +33,8 @@ const projectsData: Project[] = [
     imageCover: "/images/projects/gaiaEcotrack/gaiaCover.webp",
     imagePathArray: ["/images/projects/gaiaEcotrack/gaia1.webp", "/images/projects/gaiaEcotrack/gaia2.webp"],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ilichb/GaiaEcotrack/tree/GaiaDEV",
+    previewUrl: "/"
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ const projectsData: Project[] = [
      "/images/projects/agilix/agilix5.webp","/images/projects/agilix/agilix6.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
-    previewUrl: "/",
+    previewUrl: "/"
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const projectsData: Project[] = [
     "/images/projects/videogamesWiki/videogames4.webp", "/images/projects/videogamesWiki/videogames5.webp", "/images/projects/videogamesWiki/videogames6.webp"],
     tag: ["All"], 
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
-    previewUrl: "https://videogames-wiki.vercel.app/",
+    previewUrl: "https://videogames-wiki.vercel.app/"
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const projectsData: Project[] = [
     "/images/projects/rickAndMorty/rickMorty4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
-    previewUrl: "https://rick-and-morty-project-snowy.vercel.app/",
+    previewUrl: "https://rick-and-morty-project-snowy.vercel.app/"
   },
 ];
 

@@ -11,7 +11,6 @@ import {
   Button
 } from "@nextui-org/react";
 import { caraouselHook } from "@/utils/hooks/caraousel";
-import { useMemo } from "react";
 import Image from "next/image";
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
@@ -36,7 +35,7 @@ const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePa
         style={{ background: `url(${imgCover})`, backgroundSize: "cover" }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-          <Link
+            <Link
             href={gitUrl} target="blank"
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
