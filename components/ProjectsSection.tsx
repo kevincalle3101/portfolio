@@ -8,7 +8,8 @@ interface Project {
   id: number,
   title: string,
   description: string,
-  image: string,
+  imageCover: string,
+  imagePathArray: string[],
   tag: string[],
   gitUrl: string,
   previewUrl: string,
@@ -19,7 +20,8 @@ const projectsData: Project[] = [
     id: 1,
     title: "Countries App",
     description: "An application that will allow you to know all the data of any country in the world",
-    image: "/images/projects/countriesApp/countriesApp.webp",
+    imageCover: "/images/projects/countriesApp/countriesCover.webp",
+    imagePathArray: ["/images/projects/countriesApp/countries1.webp", "/images/projects/countriesApp/countries2.webp", "/images/projects/countriesApp/countries3.webp", "/images/projects/countriesApp/countries4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/countries-app",
     previewUrl: "https://kevincalle-countries-app.vercel.app/",
@@ -28,7 +30,8 @@ const projectsData: Project[] = [
     id: 2,
     title: "Gaia Ecotrack",
     description: "Gaia Ecotrack, developed during my internship at Andromeda Computer, is the MVP of a natural energy tokenization system for subsequent trading on the Algorand network.",
-    image: "/images/projects/gaiaEcotrack/gaiaEcotrack.webp",
+    imageCover: "/images/projects/gaiaEcotrack/gaiaCover.webp",
+    imagePathArray: ["/images/projects/gaiaEcotrack/gaia1.webp", "/images/projects/gaiaEcotrack/gaia2.webp"],
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -37,7 +40,9 @@ const projectsData: Project[] = [
     id: 3,
     title: "Tu Sueño",
     description: "Tu Sueño is a project for a Colombian piggy bank sales company, which has inventory management, online sales and user management.",
-    image: "/images/projects/tuSueno/tuSueno.webp",
+    imageCover: "/images/projects/tuSueno/tuSuenoCover.webp",
+    imagePathArray: ["/images/projects/tuSueno/tuSueno1.webp", "/images/projects/tuSueno/tuSueno2.webp", "/images/projects/tuSueno/tuSueno3.webp", "/images/projects/tuSueno/tuSueno4.webp", 
+    "/images/projects/tuSueno/tuSueno5.webp", "/images/projects/tuSueno/tuSueno6.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/UrielGarmendia/tu-suenio-front",
     previewUrl: "https://tu-suenio-front.vercel.app/",
@@ -46,7 +51,9 @@ const projectsData: Project[] = [
     id: 4,
     title: "Agilix",
     description: "Agilix is a Point of Sale (POS) System that simplifies the management of retail businesses, promoting their growth through an intuitive and efficient web application.",
-    image: "/images/projects/agilix/agilix.webp",
+    imageCover: "/images/projects/agilix/agilixCover.webp",
+    imagePathArray: ["/images/projects/agilix/agilix1.webp", "/images/projects/agilix/agilix2.webp", "/images/projects/agilix/agilix3.webp", "/images/projects/agilix/agilix4.webp",
+     "/images/projects/agilix/agilix5.webp","/images/projects/agilix/agilix6.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
     previewUrl: "/",
@@ -55,7 +62,9 @@ const projectsData: Project[] = [
     id: 5,
     title: "Videogames Wiki",
     description: "It's a video game Wiki that has intuitive search, video game details, and you can create your own!",
-    image: "/images/projects/videogamesWiki/videogamesWiki.webp",
+    imageCover: "/images/projects/videogamesWiki/videogamesCover.webp",
+    imagePathArray: ["/images/projects/videogamesWiki/videogames1.webp", "/images/projects/videogamesWiki/videogames2.webp", "/images/projects/videogamesWiki/videogames3.webp",
+    "/images/projects/videogamesWiki/videogames4.webp", "/images/projects/videogamesWiki/videogames5.webp", "/images/projects/videogamesWiki/videogames6.webp"],
     tag: ["All"], 
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
     previewUrl: "https://videogames-wiki.vercel.app/",
@@ -64,7 +73,9 @@ const projectsData: Project[] = [
     id: 6,
     title: "Rick and Morty Wiki",
     description: "It has more than 800 characters from the series, their details and save your favorites with an intuitive search for them.",
-    image: "/images/projects/rickAndMorty/rickAndMorty.webp",
+    imageCover: "/images/projects/rickAndMorty/rickMortyCover.webp",
+    imagePathArray: ["/images/projects/rickAndMorty/rickMorty1.webp", "/images/projects/rickAndMorty/rickMorty2.webp", "/images/projects/rickAndMorty/rickMorty3.webp",
+    "/images/projects/rickAndMorty/rickMorty4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
     previewUrl: "https://rick-and-morty-project-snowy.vercel.app/",
@@ -124,9 +135,10 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
-              imgUrl={project.image}
+              imgCover={project.imageCover}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              imagePathArray={project.imagePathArray}
             />
           </motion.li>
         ))}
