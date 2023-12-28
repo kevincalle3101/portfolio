@@ -10,23 +10,33 @@ import {
   useDisclosure,
   Button
 } from "@nextui-org/react";
+import { caraouselHook } from "@/utils/hooks/caraousel";
+import { useMemo } from "react";
+import Image from "next/image";
+import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 
 interface Project {
   title: string;
   description: string;
-  imgUrl: string;
+  imgCover: string;
   gitUrl: string;
   previewUrl: string;
+  imagePathArray: string[];
 }
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Project) => {
+const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePathArray } : Project) => {
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  let imagePathArrayLength: number = useMemo(() => {
+    return imagePathArray.length
+  }, [imagePathArray])
+  const { position, clickNext, clickPrev } = caraouselHook(imagePathArrayLength);
 
   return (
     <div>
       <div className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{ background: `url(${imgCover})`, backgroundSize: "cover"}}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
@@ -65,9 +75,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl } : Projec
         <>
          <ModalHeader className="flex flex-col gap-1 text-3xl">{title}</ModalHeader>
               <ModalBody>
-                <p> 
-                  {description}
-                </p>
+                <p>{description}</p>
+                <ArrowBackIosRoundedIcon onClick={clickPrev}/>
+                <Image src={imagePathArray[position]} alt={title} className="rounded-xl" width={1000} height={500} />
+                <ArrowForwardIosRoundedIcon onClick={clickNext}/>
               </ModalBody>
               <ModalFooter>
                 {/* <Button color="danger" variant="light" onPress={onClose}>
