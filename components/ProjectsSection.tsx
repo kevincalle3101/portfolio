@@ -13,6 +13,7 @@ interface Project {
   tag: string[],
   gitUrl: string,
   previewUrl: string,
+  technologies: string[]
 }
 
 const projectsData: Project[] = [
@@ -24,17 +25,19 @@ const projectsData: Project[] = [
     imagePathArray: ["/images/projects/countriesApp/countries1.webp", "/images/projects/countriesApp/countries2.webp", "/images/projects/countriesApp/countries3.webp", "/images/projects/countriesApp/countries4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/countries-app",
-    previewUrl: "https://kevincalle-countries-app.vercel.app/"
+    previewUrl: "https://kevincalle-countries-app.vercel.app/",
+    technologies: ["React", "Javascript", "Module CSS", "GraphQL", "Apollo", "Vite"]
   },
   {
     id: 2,
-    title: "Gaia Ecotrack",
+    title: "Gaia Ecotrack - Internship",
     description: "Gaia Ecotrack, developed during my internship at Andromeda Computer, is the MVP of a natural energy tokenization system for subsequent trading on the Algorand network.",
     imageCover: "/images/projects/gaiaEcotrack/gaiaCover.webp",
     imagePathArray: ["/images/projects/gaiaEcotrack/gaia1.webp", "/images/projects/gaiaEcotrack/gaia2.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ilichb/GaiaEcotrack/tree/GaiaDEV",
-    previewUrl: "/"
+    previewUrl: "/",
+    technologies: ["React", "Typescript", "TailwindCSS", "Redux", "Jest", "Algokit", "Docker"]
   },
   {
     id: 3,
@@ -46,6 +49,7 @@ const projectsData: Project[] = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/UrielGarmendia/tu-suenio-front",
     previewUrl: "https://tu-suenio-front.vercel.app/",
+    technologies: ["React", "Javascript", "Module CSS", "Redux", "Auth0", "Cloudinary", "Node", "Express", "PostgreSQL"]
   },
   {
     id: 4,
@@ -56,7 +60,8 @@ const projectsData: Project[] = [
      "/images/projects/agilix/agilix5.webp","/images/projects/agilix/agilix6.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/JoseEnriquez88/Agilix",
-    previewUrl: "/"
+    previewUrl: "/",
+    technologies: ["React", "Javascript", "Module CSS", "Redux-Toolkit", "Auth0", "Cloudinary", "Node", "Express", "Sequelize",  "PostgreSQL"]
   },
   {
     id: 5,
@@ -67,7 +72,8 @@ const projectsData: Project[] = [
     "/images/projects/videogamesWiki/videogames4.webp", "/images/projects/videogamesWiki/videogames5.webp", "/images/projects/videogamesWiki/videogames6.webp"],
     tag: ["All"], 
     gitUrl: "https://github.com/kevincalle3101/PI-VIDEOGAMES",
-    previewUrl: "https://videogames-wiki.vercel.app/"
+    previewUrl: "https://videogames-wiki.vercel.app/",
+    technologies: ["React", "Javascript", "Module CSS", "Redux", "Vite", "Node", "Express", "Sequelize",  "PostgreSQL"]
   },
   {
     id: 6,
@@ -78,7 +84,8 @@ const projectsData: Project[] = [
     "/images/projects/rickAndMorty/rickMorty4.webp"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/kevincalle3101/RickAndMorty-Project",
-    previewUrl: "https://rick-and-morty-project-snowy.vercel.app/"
+    previewUrl: "https://rick-and-morty-project-snowy.vercel.app/",
+    technologies: ["React", "Javascript", "Module CSS", "Redux", "Node", "Express", "Sequelize",  "PostgreSQL"]
   },
 ];
 
@@ -139,6 +146,7 @@ const ProjectsSection = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               imagePathArray={project.imagePathArray}
+              technologies={project.technologies}
             />
           </motion.li>
         ))}
