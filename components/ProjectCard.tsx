@@ -22,9 +22,10 @@ interface Project {
   gitUrl: string;
   previewUrl: string;
   imagePathArray: string[];
+  technologies: string[];
 }
 
-const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePathArray }: Project) => {
+const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePathArray, technologies}: Project) => {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { position, clickNext, clickPrev } = caraouselHook(imagePathArray.length);
@@ -51,14 +52,14 @@ const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePa
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        {/* <p className="text-[#ADB7BE]">{description}</p> */}
+        <p className="text-[#ADB7BE] ">{technologies.join(", ")}</p>
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={true}
         // className="bg-blue100 dark:bg-blue1000 text-black dark:text-gray100"
         size="4xl"
         backdrop="opaque"
         classNames={{
-          body: "py-6 h-calc(auto + 20px)",
+          body: "py-6",
           // backdrop: "bg-[#4c0519]/10 backdrop-opacity-40",
           base: "border-[#292f46] bg-[#19172c] dark:bg-[#121212] text-white",
           header: "border-b-[1px] border-[#ADB7BE]/60",
@@ -72,10 +73,10 @@ const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePa
               <ModalHeader className="flex flex-col gap-1 text-3xl">{title}</ModalHeader>
               <ModalBody>
                 <p>{description}</p>
-                <div className="flex flex-arrow overflow-hidden items-center xs:w-[100%]">
-                  <ArrowBackIosRoundedIcon onClick={clickPrev} fontSize="large" className="xs:w-[5%] text-[#e11d48] transform hover:scale-150 transition-transform duration-400 mr-2" />
-                  <Image src={imagePathArray[position]} alt={title} className="rounded-xl md:h-[414px] xs:w-[90%]" width={1000} height={500} />
-                  <ArrowForwardIosRoundedIcon onClick={clickNext}  fontSize="large" className="xs:w-[5%] text-[#e11d48] transform hover:scale-150 transition-transform duration-400 ml-2"/>
+                <div className="flex flex-arrow overflow-hidden items-center w-[100%]">
+                  <ArrowBackIosRoundedIcon onClick={clickPrev} fontSize="large" className="xs:w-[5%] text-[#e11d48] transform xs:hover:scale-150 hover:scale-110 transition-transform duration-400 xs:mr-2" />
+                  <Image src={imagePathArray[position]} alt={title} className="rounded-xl md:h-[414px] xs:w-[90%] w-[80%]" width={1000} height={500} />
+                  <ArrowForwardIosRoundedIcon onClick={clickNext}  fontSize="large" className="xs:w-[5%] text-[#e11d48] transform xs:hover:scale-150 hover:scale-110 transition-transform duration-400 xs:ml-2"/>
                 </div>
               </ModalBody>
               <ModalFooter>
