@@ -37,25 +37,15 @@ const tabData: typeTabData[] = [
     ),
   },
   {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Full Stack Developer - Henry Bootcamp</li>
-        <li>Cibersecurity Engineering - Senati (unfinished)</li>
-      </ul>
-    ),
-  },
-  {
     title: "Experience",
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Tu Sueño - Full Stack Developer</li>
-        <li>Andromeda Computer - Internship</li>
+        <li>Full Stack Developer - Andromeda Computer(Internship) Oct-Nov 2023</li>
+        <li>Full Stack Developer - Tu Sueño Set-Oct 2023</li>
       </ul>
     ),
-  }
+  },
 ];
 
 const AboutSection = () => {
@@ -97,11 +87,11 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
             >
               {" "}
-              Education{" "}
+              Experience{" "}
             </TabButton>
           </div>
           <div className="mt-8">
