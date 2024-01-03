@@ -4,6 +4,7 @@ import Link from 'next/link'
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
 
 interface NavLink {
     title: string;
@@ -29,9 +30,9 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
     return (
         <nav className='fixed top-0 left-0 sm:border-b sm:border-[#33353F] right-0 z-10 bg-[#121212] bg-opacity-100'>
-            <div className='flex container lg:py-4 items-center justify-between mx-auto px-4 py-2'>
+            <div className='flex container lg:py-4 items-center justify-between mx-auto  px-4 xs:px-8 py-2'>
                 <Link href={"/"} className='text-3xl md:text-5xl text-white font-semibold'>
-                    <img src='/images/LogoKC.png' alt="logo" className='w-14 h-12' />
+                    <Image src='/images/LogoKC.png' alt="logo" className='w-14 h-12 transform scale-110 hover:scale-125 transition-transform duration-500' width={50} height={50}/>
                 </Link>
                 <div className='mobile-menu block md:hidden'>{
                     !navbarOpen ? (

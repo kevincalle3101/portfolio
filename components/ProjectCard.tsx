@@ -56,7 +56,7 @@ const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePa
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={true}
         // className="bg-blue100 dark:bg-blue1000 text-black dark:text-gray100"
-        size="4xl"
+        size="5xl"
         backdrop="opaque"
         classNames={{
           body: "py-6",
@@ -75,7 +75,7 @@ const ProjectCard = ({ imgCover, title, description, gitUrl, previewUrl, imagePa
                 <p>{description}</p>
                 <div className="flex flex-arrow overflow-hidden items-center w-[100%]">
                   <ArrowBackIosRoundedIcon onClick={clickPrev} fontSize="large" className="xs:w-[5%] text-[#e11d48] transform xs:hover:scale-150 hover:scale-110 transition-transform duration-400 xs:mr-2" />
-                  <Image src={imagePathArray[position]} alt={title} className="rounded-xl md:h-[414px] xs:w-[90%] w-[80%]" width={1000} height={500} />
+                  <Image src={imagePathArray[position]} alt={title} className="rounded-xl md:h-[475px] xs:w-[90%] w-[80%]" width={1000} height={500} />
                   <ArrowForwardIosRoundedIcon onClick={clickNext}  fontSize="large" className="xs:w-[5%] text-[#e11d48] transform xs:hover:scale-150 hover:scale-110 transition-transform duration-400 xs:ml-2"/>
                 </div>
               </ModalBody>
