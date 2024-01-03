@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 
 const HeroSection = () => {
@@ -11,9 +12,13 @@ const HeroSection = () => {
         <section className='lg:py-16'>
             <div className='grid items-center grid-cols-1 sm:grid-cols-12 gap-y-8' >
                 <div className='col-span-7 xl:col-span-8 ml-0 text-center sm:text-left sm:justify-self-start'>
-                    <h1 className='text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-2 font-extrabold min-h-[120px] xs:min-h-[0px] 
+                    <motion.h1 className='text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-2 font-extrabold min-h-[120px] xs:min-h-[0px] 
                     sm:min-h-[150px] md:min-h-[150px] lg:min-h-[220px] xl:min-h-[300px] 2xl:min-h-[0px] max-w-[200px] xs:max-w-none
-                    sm:max-w-[280px] lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-none mx-auto 2xl:leading-normal'>
+                    sm:max-w-[280px] lg:max-w-[420px] xl:max-w-[560px] 2xl:max-w-none mx-auto 2xl:leading-normal'
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.5 }}
+                        transition={{ type: 'spring', stiffness: 200, damping: 20 }}>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-rose-600' >{`Hello, I'm`}</span>
                         <br />
                         <TypeAnimation
@@ -30,17 +35,17 @@ const HeroSection = () => {
                             repeat={Infinity}
                             preRenderFirstString={true}
                         />
-                    </h1>
+                    </motion.h1>
                     <p className='text-[#ADB7BE] mb-5 text-base sm:text-lg sm:mt-2  lg:text-xl'>Full Stack Web Developer</p>
                     <div className='flex flex-arrow space-x-5 justify-center mb-5 mt-0 sm:justify-start'>
                         <a href="https://github.com/kevincalle3101" target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <Image alt='github' src='/images/logoGithub.png' width={40} height={40}/>
+                            <Image alt='github' src='/images/logoGithub.png' width={40} height={40} />
                         </a>
                         <a href="https://www.linkedin.com/in/kevin-calle-53935b273/" target="blank" className='flex  justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <Image  src='/images/logoLinkedln.png' alt='linkedin' width={40} height={40}/>
+                            <Image src='/images/logoLinkedln.png' alt='linkedin' width={40} height={40} />
                         </a>
-                        <a href="mailto:kevincalle3101@gmail.com"  target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
-                            <Image src='/images/logoMail.png' alt='gmail' width={40} height={40}/>
+                        <a href="mailto:kevincalle3101@gmail.com" target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
+                            <Image src='/images/logoMail.png' alt='gmail' width={40} height={40} />
                         </a>
                     </div>
                     <div className='items-center'>
