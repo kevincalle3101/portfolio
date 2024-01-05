@@ -49,7 +49,8 @@ const HeroSection = () => {
                         </a>
                     </div>
                     <div className='items-center'>
-                        <Link href="/#contact" className='px-6 inline-block w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white'>Hire Me</Link>
+                        <Link href="/#contact" className='px-6 inline-block w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-200 text-white 
+                        transform scale-100 hover:scale-105 transition-transform duration-300'>Hire Me</Link>
                         <a href='/CV.pdf' download
                             className='px-1 inline-block w-full sm:w-fit py-1 rounded-full bg-gradient-to-br from-rose-300 via-rose-500 to-rose-600 hover:bg-slate-800 text-white border border-none mt-3 sm:mt-0'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
@@ -59,9 +60,9 @@ const HeroSection = () => {
                 <div className='col-span-5 xl:col-span-4 lg:mt-0 place-self-center sm:mb-auto sm:ml-auto'>
                     <div className='rounded-full overflow-hidden bg-[#181818] w-[250px] h-[250px] md:w-[250px] md:h-[250px] relative lg:w-[400px] lg:h-[400px]'>
                         <Image
-                            src='/images/fotoPerfilPorfolioKevin.png'
+                            src='/images/fotoPerfilPortfolioKev.png'
                             alt='foto de perfil' width={200} height={200}
-                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[330px] lg:h-[400px]' />
+                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:w-[330px] lg:h-[425px]' />
                     </div>
                 </div>
             </div>
