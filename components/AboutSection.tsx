@@ -41,6 +41,7 @@ const tabData: typeTabData[] = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
+        <li>Full Stack Developer - Flexwork LATAM(Internship) Jan-Present 2024</li>
         <li>Full Stack Developer - Andromeda Computer(Internship) Oct-Nov 2023</li>
         <li>Full Stack Developer - Tu Sueño Set-Oct 2023</li>
       </ul>
@@ -73,6 +74,13 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              {" "}
+              Experience{" "}
+            </TabButton>
+            <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
@@ -85,13 +93,6 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              {" "}
-              Experience{" "}
             </TabButton>
           </div>
           <div className="mt-8">
