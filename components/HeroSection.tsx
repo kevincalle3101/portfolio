@@ -41,7 +41,7 @@ const HeroSection = () => {
                         <a href="https://github.com/kevincalle3101" target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
                             <Image alt='github' src='/images/logoGithub.png' width={40} height={40} />
                         </a>
-                        <a href="https://www.linkedin.com/in/kevin-calle-53935b273/" target="blank" className='flex  justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
+                        <a href="https://www.linkedin.com/in/kevin-calle-mendoza-53935b273" target="blank" className='flex  justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
                             <Image src='/images/logoLinkedln.png' alt='linkedin' width={40} height={40} />
                         </a>
                         <a href="mailto:kevincalle3101@gmail.com" target="_blank" className='flex justify-center items-center transform scale-100 hover:scale-110 transition-transform duration-300'>
