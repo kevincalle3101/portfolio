@@ -41,7 +41,8 @@ const tabData: typeTabData[] = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Full Stack Developer - Flexwork LATAM(Internship) Jan-Present 2024</li>
+        <li>Full Stack Developer - ID Business Intelligence Feb-Act 2024</li>
+        <li>Full Stack Developer - Flexwork LATAM(Internship) Jan-Feb 2024</li>
         <li>Full Stack Developer - Andromeda Computer(Internship) Oct-Nov 2023</li>
         <li>Full Stack Developer - Tu Sueño Set-Oct 2023</li>
       </ul>
